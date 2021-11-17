@@ -9,8 +9,6 @@ public class Student {
     String number;
     int birthYear;
 
-
-
     @Override
     public int hashCode() {
         final int prime = 31;
