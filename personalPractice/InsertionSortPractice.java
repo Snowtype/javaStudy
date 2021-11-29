@@ -9,6 +9,7 @@ public class InsertionSortPractice {
     public static void main(String[] args) {
         int[] nums = {9,2,3,5,7,6,4};
 
+
         List<Integer> list = new LinkedList<>();
 
         loop1: for (Integer num : nums) {
