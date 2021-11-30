@@ -34,5 +34,29 @@ public class InsertionSortPractice {
             sb.append(num + ", ");
         }
         System.out.println(sb.substring(0, sb.length() - 2));
+
+        int[] arr = {10,9,8,7,0,1};
+        arr=insertionSort(arr);
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+
     }
+
+    public static int[] insertionSort (int[] arr) {
+
+        for (int i = 0; i < arr.length; i++) {
+            //j = arr.length-1 사용하면 안됨. 조심할 것.
+            for (int j = i; j >= 1; j--) {
+                if (arr[j-1] > arr[j]) { // 앞의 값이 뒤의 값 보다 작으면 서로 바꾸기
+                    int tmp = arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = tmp;
+                } else break;
+            }
+        }
+
+        return arr;
+    }
+
 }
