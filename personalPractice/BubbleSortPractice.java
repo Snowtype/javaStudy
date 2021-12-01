@@ -20,5 +20,26 @@ public class BubbleSortPractice {
         for (int num : nums) {
             System.out.print(num + ", ");
         }
+
+        System.out.println("Hello");
+        nums=bubbleSort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+    }
+
+    public static int[] bubbleSort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int tmp = arr[j + 1];
+                    arr[j + 1] = arr[j];
+                    arr[j] = tmp;
+
+                }
+            }
+        }
+
+        return arr;
     }
 }
