@@ -6,8 +6,6 @@ public class MergeSortPractice {
 
 
 
-
-
         int[] arr = {10,7,1,5,3,9,8,4,6,2};
 
         int i = 0;
