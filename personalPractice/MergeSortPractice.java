@@ -19,10 +19,22 @@ public class MergeSortPractice {
         System.out.println(7/2);
     }
 
-    public static mergeSort(int)
+    public static void mergeSort(int) {
+
+    }
 
     public static void merge(int[] arr, int start, int end) {
         int mid = (start + end) / 2;
-        int
+        int left = start;
+        int right = mid + 1;
+        int idx = start;
+
+        while (idx <= mid && right <= end) {
+            if (arr[left] <= arr[right]) {
+                sorted[idx] = a[left];
+                idx
+            }
+        }
+
     }
 }
