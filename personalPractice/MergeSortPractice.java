@@ -8,20 +8,24 @@ public class MergeSortPractice {
 
     public static void main(String[] args) {
 
-        int i = 0;
-        int j = arr.length / 2; // middle + 1
-        int k = i; // index
+        StringBuilder sb = new StringBuilder();
 
 
-        while (i <= j - 1 && j <= arr.length - 1) {
-            if (j >)
+        mergeSort(arr,0,arr.length-1);
+
+        for (int data : sorted) {
+            sb.append(data + ", ");
         }
 
-        System.out.println(7 / 2);
     }
 
-    public static void mergeSort(int) {
-
+    public static void mergeSort(int[] arr, int start, int end) {
+        if(start < end) {
+            int mid = (start + end) / 2;
+            mergeSort(arr, start, mid);
+            mergeSort(arr,mid+1, end);
+            merge(arr,start,end);
+        }
     }
 
     public static void merge(int[] arr, int start, int end) {
@@ -33,9 +37,19 @@ public class MergeSortPractice {
         while (left <= mid && right <= end) {
             if (arr[left] <= arr[right]) {
                 sorted[idx] = arr[left];
-                idx
+                left++;
+            } else {
+                sorted[idx] = arr[right];
+                right++;
             }
+            idx++;
         }
+
+        for (int i = 0; i < mid - left; i++) {
+            sorted[idx + i] = arr[left + i];
+        }
+
+
 
     }
 }
