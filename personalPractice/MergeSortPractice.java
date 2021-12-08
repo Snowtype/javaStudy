@@ -12,9 +12,7 @@ public class MergeSortPractice {
         StringBuilder sb = new StringBuilder();
 
         int[] tmp = new int[arr.length];
-        for (int i = 0; i <= arr.length-1; i++) {
-            tmp[i] = arr[i];
-        }
+
 
         mergeSort(arr, tmp, 0, arr.length - 1);
 
@@ -59,6 +57,7 @@ public class MergeSortPractice {
 //        for (int i = 0; i < mid - left; i++) {
 //            arr[idx + i] = tmp[left + i];
 //        }
+        for(int i=start; i<=end; i++) arr[i] = tmp[i];
 
     }
 }
