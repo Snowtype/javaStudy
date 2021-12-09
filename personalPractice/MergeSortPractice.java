@@ -60,4 +60,18 @@ public class MergeSortPractice {
         for(int i=start; i<=end; i++) arr[i] = tmp[i];
 
     }
+
+
+    public static void merge2(int[] arr, int start, int end) {
+        int mid = (start + end) / 2;
+
+    }
+
+
+    public static void mergeSort2(int[] arr, int start, int end) {
+        int mid = (start + end) / 2;
+        mergeSort2(arr, start, mid);
+        mergeSort2(arr, mid + 1, end);
+        merge2(arr, start, end);
+    }
 }
