@@ -5,7 +5,7 @@ public class MergeSortPractice {
     //field : a variable inside a class,
 //    private static int[] arr = {10, 7, 1, 5, 3, 9, 8, 4, 6, 2};
 
-    private static int[] arr = {8, 7, 6, 4};
+    private static int[] arr = {8, 7, 6, 4, 10, 1, 9, 5, 3, 2};
 
     public static void main(String[] args) {
 
