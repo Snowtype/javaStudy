@@ -7,6 +7,8 @@ public class MergeSortPractice {
 
     private static int[] arr = {8, 7, 6, 4, 10, 1, 9, 5, 3, 2};
 
+    private static int[] tmp2 = new int[arr.length];
+
     public static void main(String[] args) {
 
         StringBuilder sb = new StringBuilder();
@@ -62,16 +64,27 @@ public class MergeSortPractice {
     }
 
 
-    public static void merge2(int[] arr, int start, int end) {
-        int mid = (start + end) / 2;
 
+
+    public static void mergeSort2(int[] arr, int[] tmp2, int start, int end) {
+        int mid = (start + end) / 2;
+        mergeSort2(arr, tmp2, start, mid);
+        mergeSort2(arr, tmp2, mid + 1, end);
+        merge2(arr, start, end);
     }
 
 
-    public static void mergeSort2(int[] arr, int start, int end) {
+    public static void merge2(int[] arr, int start, int end) {
         int mid = (start + end) / 2;
-        mergeSort2(arr, start, mid);
-        mergeSort2(arr, mid + 1, end);
-        merge2(arr, start, end);
+        int left = start;
+        int right = mid + 1;
+        int idx = start;
+
+        while (left <= mid && right <= end) {
+            if(arr[left] < arr[right]){
+                tmp2[idx++]
+            }
+        }
+
     }
 }
