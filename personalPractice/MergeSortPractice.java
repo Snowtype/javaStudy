@@ -89,6 +89,7 @@ public class MergeSortPractice {
             }
         }
 
+
         if(left <= mid) for(int i=left; i<=mid; i++) tmp2[idx++] = arr[i];
         else for (int i = right; i <= end; i++) tmp2[idx++] = arr[i];
 
