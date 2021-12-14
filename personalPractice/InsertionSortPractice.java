@@ -47,9 +47,9 @@ public class InsertionSortPractice {
     public static int[] insertionSort (int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
-            //j = arr.length-1 사용하면 안됨. 조심할 것.
+
             for (int j = arr.length-1; j >= 1; j--) {
-                if (arr[j-1] > arr[j]) { // 앞의 값이 뒤의 값 보다 작으면 서로 바꾸기
+                if (arr[j-1] > arr[j]) { // 앞의 값이 뒤의 값 보다 크면 서로 바꾸기
                     int tmp = arr[j-1];
                     arr[j-1] = arr[j];
                     arr[j] = tmp;
