@@ -36,6 +36,7 @@ public class InsertionSortPractice {
         System.out.println(sb.substring(0, sb.length() - 2));
 
         int[] arr = {10,9,8,7,0,1};
+
         arr=insertionSort(arr);
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
