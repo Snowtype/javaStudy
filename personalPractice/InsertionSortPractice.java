@@ -33,6 +33,7 @@ public class InsertionSortPractice {
         for (Integer num : list) {
             sb.append(num + ", ");
         }
+
         System.out.println(sb.substring(0, sb.length() - 2));
 
         int[] arr = {10,9,8,7,0,1};
