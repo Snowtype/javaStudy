@@ -43,6 +43,7 @@ public class InsertionSortPractice {
             System.out.print(arr[i] + " ");
         }
 
+
     }
 
 
