@@ -51,7 +51,7 @@ public class InsertionSortPractice {
 
         for (int i = 0; i < arr.length; i++) {
 
-            for (int j = arr.length-1; j >= 1; j--) {
+            for (int j = arr.length-1; j >= 1; j--) { // 끝에서 부터 앞으로 검사
                 if (arr[j-1] > arr[j]) { // 앞의 값이 뒤의 값 보다 크면 서로 바꾸기
 
                     int tmp = arr[j-1];
