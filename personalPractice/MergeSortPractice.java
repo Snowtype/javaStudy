@@ -15,7 +15,6 @@ public class MergeSortPractice {
 
         int[] tmp = new int[arr.length];
 
-
         //mergeSort(arr, tmp, 0, arr.length - 1);
         mergeSort2(arr, tmp2,  0, arr.length - 1);
         for (int data : tmp2) {
