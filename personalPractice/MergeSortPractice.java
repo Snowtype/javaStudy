@@ -98,4 +98,22 @@ public class MergeSortPractice {
         for(int i=start; i<=end; i++) arr[i] = tmp2[i];
 
     }
+
+
+//---------------3-------------------
+
+    public static void mergeSort3(int start, int end) {
+        if (start < end) {
+            int mid = (start + end) / 2;
+            mergeSort3(start, mid);
+            mergeSort3(mid, end);
+
+            int left = start;
+            int right = mid + 1;
+
+
+
+        }
+
+    }
 }
