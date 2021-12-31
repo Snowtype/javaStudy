@@ -30,6 +30,7 @@ public class MergeSortPractice {
         System.out.println(sb);
 
 
+
         //------------------3------------------
         arr3 = new int[] {4, 1, 3, 9, 10, 5, 6, 7};
         tmp3 = new int[arr3.length];
