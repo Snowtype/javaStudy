@@ -8,8 +8,6 @@ public class HashTableExample {
 
 
 
-
-
         ht.put(0, "OK");
         ht.put(1, "Yes");
         ht.put(2, "NO");
