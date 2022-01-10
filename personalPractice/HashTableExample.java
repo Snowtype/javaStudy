@@ -6,8 +6,6 @@ public class HashTableExample {
     public static void main(String[] args) {
         Hashtable<Integer, String> ht = new Hashtable<Integer, String>();
 
-
-
         ht.put(0, "OK");
         ht.put(1, "Yes");
         ht.put(2, "NO");
