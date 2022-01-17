@@ -13,6 +13,7 @@ public class HashTableExample {
         ht.remove(0);
 
 
+
         for (int i = 0; i <= ht.size(); i++) {
 
             System.out.println(ht.get(i));
