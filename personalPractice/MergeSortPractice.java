@@ -13,8 +13,6 @@ public class MergeSortPractice {
     public static int[] tmp3;
 
 
-
-
     public static void main(String[] args) {
 
         StringBuilder sb = new StringBuilder();
