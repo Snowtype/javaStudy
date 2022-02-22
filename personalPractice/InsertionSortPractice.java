@@ -22,6 +22,7 @@ public class InsertionSortPractice {
             list.add(num);
         }
 
+
         String str = "";
         for (Integer num: list) {
             str = str + num + ", ";
